@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APK menghitung layang-layang"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginBottom="30sp"
+        android:background="#00695C"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_below="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_dg1">
+
+        <TextView
+            android:id="@+id/text_dg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagonal 1 : "
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/input_dg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="masukan diagonal 1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_dg2"
+        android:layout_below="@id/layout_dg1">
+
+
+        <TextView
+            android:id="@+id/text_dg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diagonal 2: "
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+
+        <EditText
+            android:id="@+id/input_dg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="masukan diagonal 2"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_luas"
+        android:layout_below="@id/layout_dg2">
+
+        <TextView
+            android:id="@+id/text_viewluas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_hitung"
+        android:layout_below="@id/layout_luas"
+        android:text="Hitung Luas"
+        android:layout_marginHorizontal="10sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/btn_hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_sisi1">
+
+        <TextView
+            android:id="@+id/text_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisi 1 : "
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/input_s1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="masukan sisi 1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/layout_sisi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_sisi2">
+
+        <TextView
+            android:id="@+id/text_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sisi 2 : "
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+        <EditText
+            android:id="@+id/input_s2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:hint="masukan sisi 2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_viewkeliling"
+        android:layout_below="@id/layout_sisi2">
+
+        <TextView
+            android:id="@+id/text_viewkeliling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginLeft="10sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_hitungkeliling"
+        android:layout_below="@id/layout_viewkeliling"
+        android:text="Hitung Keliling"
+        android:layout_marginHorizontal="10sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"/>
+
+
+</RelativeLayout>
